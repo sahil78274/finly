@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Finly — Finance Dashboard</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="brand">
+            Finly<span>.</span>
+        </div>
+
+        <nav>
+
+            <a href="#" class="active">
+                <span>01</span>
+                Overview
+            </a>
+
+            <a href="#">
+                <span>02</span>
+                Transactions
+            </a>
+
+            <a href="#">
+                <span>03</span>
+                Budgets
+            </a>
+
+            <a href="#">
+                <span>04</span>
+                Analytics
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <a href="#">
+                Settings
+            </a>
+
+            <a href="#">
+                Help Center
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN -->
+
+    <main class="main">
+
+        <!-- TOPBAR -->
+
+        <header class="topbar">
+
+            <div>
+                <p class="label">PERSONAL FINANCE</p>
+
+                <h1>
+                    Good morning, Ikramul.
+                </h1>
+
+                <p class="subtitle">
+                    Here's your financial overview for October.
+                </p>
+            </div>
+
+
+            <div class="profile">
+
+                <button class="notification">
+                    <svg viewBox="0 0 24 24">
+                        <path
+                            d="M18 9a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4"
+                        />
+                    </svg>
+                </button>
+
+                <div class="avatar">
+                    I
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- BALANCE -->
+
+        <section class="balance-section">
+
+            <div class="balance-card">
+
+                <div class="balance-top">
+
+                    <div>
+                        <p>Total Balance</p>
+
+                        <h2>₹84,250</h2>
+                    </div>
+
+                    <span class="positive">
+                        +8.4%
+                    </span>
+
+                </div>
+
+                <div class="balance-bottom">
+
+                    <span>
+                        Compared to last month
+                    </span>
+
+                    <span>
+                        Updated today
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon income">
+                    ↑
+                </div>
+
+                <p>Income</p>
+
+                <h3>₹52,000</h3>
+
+                <span class="green">
+                    +12.5% this month
+                </span>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon expense">
+                    ↓
+                </div>
+
+                <p>Expenses</p>
+
+                <h3>₹31,450</h3>
+
+                <span class="red">
+                    -4.2% this month
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTENT GRID -->
+
+        <section class="content-grid">
+
+
+            <!-- SPENDING CHART -->
+
+            <div class="panel chart-panel">
+
+                <div class="panel-header">
+
+                    <div>
+                        <p class="label">OVERVIEW</p>
+                        <h2>Spending activity</h2>
+                    </div>
+
+                    <select>
+                        <option>Last 7 days</option>
+                        <option>Last 30 days</option>
+                    </select>
+
+                </div>
+
+
+                <div class="chart">
+
+                    <div class="chart-y">
+                        <span>₹8k</span>
+                        <span>₹6k</span>
+                        <span>₹4k</span>
+                        <span>₹2k</span>
+                        <span>₹0</span>
+                    </div>
+
+                    <div class="chart-area">
+
+                        <div class="grid-line"></div>
+                        <div class="grid-line"></div>
+                        <div class="grid-line"></div>
+                        <div class="grid-line"></div>
+                        <div class="grid-line"></div>
+
+                        <div class="bars">
+
+                            <div class="bar" style="height:35%"></div>
+                            <div class="bar" style="height:52%"></div>
+                            <div class="bar" style="height:42%"></div>
+                            <div class="bar" style="height:75%"></div>
+                            <div class="bar" style="height:48%"></div>
+                            <div class="bar" style="height:65%"></div>
+                            <div class="bar highlight" style="height:88%"></div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="days">
+
+                    <span>Mon</span>
+                    <span>Tue</span>
+                    <span>Wed</span>
+                    <span>Thu</span>
+                    <span>Fri</span>
+                    <span>Sat</span>
+                    <span>Sun</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- CATEGORIES -->
+
+            <div class="panel categories-panel">
+
+                <div class="panel-header">
+
+                    <div>
+                        <p class="label">BREAKDOWN</p>
+                        <h2>Spending</h2>
+                    </div>
+
+                    <button class="more">...</button>
+
+                </div>
+
+
+                <div class="donut-wrapper">
+
+                    <div class="donut">
+
+                        <div>
+                            <strong>₹31.4k</strong>
+                            <span>Total</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="legend">
+
+                    <div>
+                        <span class="dot food"></span>
+                        <p>Food</p>
+                        <strong>32%</strong>
+                    </div>
+
+                    <div>
+                        <span class="dot shopping"></span>
+                        <p>Shopping</p>
+                        <strong>24%</strong>
+                    </div>
+
+                    <div>
+                        <span class="dot bills"></span>
+                        <p>Bills</p>
+                        <strong>21%</strong>
+                    </div>
+
+                    <div>
+                        <span class="dot travel"></span>
+                        <p>Travel</p>
+                        <strong>13%</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- TRANSACTIONS -->
+
+            <div class="panel transactions">
+
+                <div class="panel-header">
+
+                    <div>
+                        <p class="label">RECENT</p>
+                        <h2>Transactions</h2>
+                    </div>
+
+                    <a href="#">View all</a>
+
+                </div>
+
+
+                <div class="transaction">
+
+                    <div class="transaction-icon food">
+                        F
+                    </div>
+
+                    <div class="transaction-info">
+
+                        <strong>Food & Dining</strong>
+                        <span>Today, 12:42 PM</span>
+
+                    </div>
+
+                    <strong class="amount negative">
+                        -₹420
+                    </strong>
+
+                </div>
+
+
+                <div class="transaction">
+
+                    <div class="transaction-icon shopping">
+                        S
+                    </div>
+
+                    <div class="transaction-info">
+
+                        <strong>Shopping</strong>
+                        <span>Yesterday, 6:20 PM</span>
+
+                    </div>
+
+                    <strong class="amount negative">
+                        -₹1,240
+                    </strong>
+
+                </div>
+
+
+                <div class="transaction">
+
+                    <div class="transaction-icon salary">
+                        +
+                    </div>
+
+                    <div class="transaction-info">
+
+                        <strong>Salary</strong>
+                        <span>Oct 01, 10:00 AM</span>
+
+                    </div>
+
+                    <strong class="amount positive-amount">
+                        +₹52,000
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <!-- BUDGET -->
+
+            <div class="panel budget">
+
+                <div class="panel-header">
+
+                    <div>
+                        <p class="label">MONTHLY</p>
+                        <h2>Budget</h2>
+                    </div>
+
+                    <button class="more">...</button>
+
+                </div>
+
+
+                <div class="budget-total">
+
+                    <div>
+                        <strong>₹31,450</strong>
+                        <span>of ₹45,000 spent</span>
+                    </div>
+
+                    <strong>70%</strong>
+
+                </div>
+
+
+                <div class="progress">
+
+                    <div></div>
+
+                </div>
+
+
+                <p class="budget-note">
+                    ₹13,550 remaining for this month.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
